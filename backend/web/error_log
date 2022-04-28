@@ -1,0 +1,139 @@
+[12-Feb-2022 00:27:03 Asia/Tashkent] An Error occurred while handling another error:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qashqada_sanoat.contact' doesn't exist in /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php:1302
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(1302): PDOStatement->execute()
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(1168): yii\db\Command->internalExecute('SELECT COUNT(id...')
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(436): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Query.php(497): yii\db\Command->queryScalar()
+#4 /home/qashqada/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(352): yii\db\Query->queryScalar('COUNT(id)', Object(yii\db\Connection))
+#5 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Query.php(368): yii\db\ActiveQuery->queryScalar('COUNT(id)', Object(yii\db\Connection))
+#6 /home/qashqada/public_html/backend/views/layouts/main.php(168): yii\db\Query->count('id')
+#7 /home/qashqada/public_html/vendor/yiisoft/yii2/base/View.php(347): require('/home/qashqada/...')
+#8 /home/qashqada/public_html/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/qashqada/...', Array)
+#9 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/qashqada/...', Array, Object(backend\controllers\SiteController))
+#10 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#11 /home/qashqada/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#12 /home/qashqada/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#13 [internal function]: yii\web\ErrorAction->run()
+#14 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#15 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#16 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#17 /home/qashqada/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#18 /home/qashqada/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#19 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qashqada_sanoat.contact' doesn't exist
+The SQL being executed was: SELECT COUNT(id) FROM `contact` WHERE `status`=0 in /home/qashqada/public_html/vendor/yiisoft/yii2/db/Schema.php:676
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(id...')
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(1168): yii\db\Command->internalExecute('SELECT COUNT(id...')
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(436): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Query.php(497): yii\db\Command->queryScalar()
+#4 /home/qashqada/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(352): yii\db\Query->queryScalar('COUNT(id)', Object(yii\db\Connection))
+#5 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Query.php(368): yii\db\ActiveQuery->queryScalar('COUNT(id)', Object(yii\db\Connection))
+#6 /home/qashqada/public_html/backend/views/layouts/main.php(168): yii\db\Query->count('id')
+#7 /home/qashqada/public_html/vendor/yiisoft/yii2/base/View.php(347): require('/home/qashqada/...')
+#8 /home/qashqada/public_html/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/qashqada/...', Array)
+#9 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/qashqada/...', Array, Object(backend\controllers\SiteController))
+#10 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#11 /home/qashqada/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#12 /home/qashqada/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#13 [internal function]: yii\web\ErrorAction->run()
+#14 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array(Array, Array)
+#15 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams(Array)
+#16 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#17 /home/qashqada/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#18 /home/qashqada/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#19 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'qashqada_sanoat.contact' doesn't exist
+)
+
+Previous exception:
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qashqada_sanoat.contact' doesn't exist in /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php:1302
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(1302): PDOStatement->execute()
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(1168): yii\db\Command->internalExecute('SELECT COUNT(id...')
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(436): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Query.php(497): yii\db\Command->queryScalar()
+#4 /home/qashqada/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(352): yii\db\Query->queryScalar('COUNT(id)', Object(yii\db\Connection))
+#5 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Query.php(368): yii\db\ActiveQuery->queryScalar('COUNT(id)', Object(yii\db\Connection))
+#6 /home/qashqada/public_html/backend/views/layouts/main.php(168): yii\db\Query->count('id')
+#7 /home/qashqada/public_html/vendor/yiisoft/yii2/base/View.php(347): require('/home/qashqada/...')
+#8 /home/qashqada/public_html/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/qashqada/...', Array)
+#9 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/qashqada/...', Array, Object(backend\controllers\SiteController))
+#10 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('\n<div class="ro...')
+#11 /home/qashqada/public_html/backend/controllers/SiteController.php(65): yii\base\Controller->render('index')
+#12 [internal function]: backend\controllers\SiteController->actionIndex()
+#13 /home/qashqada/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#16 /home/qashqada/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#17 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /home/qashqada/public_html/backend/web/index.php(18): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qashqada_sanoat.contact' doesn't exist
+The SQL being executed was: SELECT COUNT(id) FROM `contact` WHERE `status`=0 in /home/qashqada/public_html/vendor/yiisoft/yii2/db/Schema.php:676
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(id...')
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(1168): yii\db\Command->internalExecute('SELECT COUNT(id...')
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Command.php(436): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Query.php(497): yii\db\Command->queryScalar()
+#4 /home/qashqada/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(352): yii\db\Query->queryScalar('COUNT(id)', Object(yii\db\Connection))
+#5 /home/qashqada/public_html/vendor/yiisoft/yii2/db/Query.php(368): yii\db\ActiveQuery->queryScalar('COUNT(id)', Object(yii\db\Connection))
+#6 /home/qashqada/public_html/backend/views/layouts/main.php(168): yii\db\Query->count('id')
+#7 /home/qashqada/public_html/vendor/yiisoft/yii2/base/View.php(347): require('/home/qashqada/...')
+#8 /home/qashqada/public_html/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/qashqada/...', Array)
+#9 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/home/qashqada/...', Array, Object(backend\controllers\SiteController))
+#10 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('\n<div class="ro...')
+#11 /home/qashqada/public_html/backend/controllers/SiteController.php(65): yii\base\Controller->render('index')
+#12 [internal function]: backend\controllers\SiteController->actionIndex()
+#13 /home/qashqada/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#16 /home/qashqada/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#17 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /home/qashqada/public_html/backend/web/index.php(18): yii\base\Application->run()
+#19 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'qashqada_sanoat.contact' doesn't exist
+)
+
+[13-Mar-2022 11:23:29 UTC] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home/qashqada/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/qashqada/public_html/vendor/yiisoft/yii2/web/Controller.php(221): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#8 /home/qashqada/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#9 /home/qashqada/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#11 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: You are not allowed to access this page. in /home/qashqada/public_html/vendor/yiisoft/yii2-gii/src/Module.php:116
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(166): yii\gii\Module->beforeAction(Object(yii\base\InlineAction))
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('index', Array)
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/ind...', Array)
+#3 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home/qashqada/public_html/backend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+[23-Mar-2022 05:40:18 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 12791808 bytes) in /home/qashqada/public_html/vendor/opis/closure/functions.php on line 20
+[23-Mar-2022 05:41:09 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 12791808 bytes) in /home/qashqada/public_html/vendor/opis/closure/functions.php on line 20
+[23-Mar-2022 05:42:26 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 12791808 bytes) in /home/qashqada/public_html/vendor/opis/closure/functions.php on line 20

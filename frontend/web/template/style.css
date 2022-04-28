@@ -1,0 +1,65 @@
+svg path {
+
+	fill: #a1e3a7;
+	stroke: white;
+	stroke-width: 1.008;
+	
+}
+
+/*.mtooltip{
+	position: relative;
+}*/
+
+svg path:hover {
+	fill: #1fb076;
+	transition: 0.6s;
+	cursor: pointer;
+
+}
+
+
+.description {
+  position: absolute;
+  
+  top: 0;
+  left: 100;
+  z-index: 400;
+
+}
+
+.box2 {
+  position: relative;
+  width: 600px;
+  height: 380px;
+}
+
+#tooltip {
+  position: fixed;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+
+  padding: 10px;
+  background-color: #ffffff;
+  color: black;
+  opacity: 0.6;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.box2:hover #tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*#tooltip_text {
+  opacity: 0;
+  position: absolute;
+  background-color: darkred;
+  color: black;
+  top: 0;
+  left: 0;
+}
+.tooltip:hover #tooltip_text {
+  opacity: 1;
+}*/

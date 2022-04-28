@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f831bfc9-12a6-487e-8b13-d0ae7293a48d" name="sanoat" url="http://ftp.qashqadaryo-sanoat.uz">
+        <fileTransfer host="ftp.qashqadaryo-sanoat.uz" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

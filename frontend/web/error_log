@@ -1,0 +1,254 @@
+[13-Mar-2022 11:19:47 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#4 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: You are not allowed to access this page. in /home/qashqada/public_html/vendor/yiisoft/yii2-gii/src/Module.php:116
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(166): yii\gii\Module->beforeAction(Object(yii\base\InlineAction))
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('index', Array)
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/ind...', Array)
+#3 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home/qashqada/public_html/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_identity-backend=33d020c60d0bbbc373d01be5aa0d7c8f29043620e07ddaf0d8e954081ac21e42a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wPRXYC2d0q-imvBd9k1bh-SaSgXJZeXJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=1f1b268d2a74a4a9ee7d9f9841d15e8472e2da5f9bbaa2f4b1d67be417acd1b6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22tDjFHA7fRMPjbX3uq_HqSFN6J4hQdn-B%22%3B%7D; advanced-backend=777da4fd651c0605f3910886548cbfaa; _csrf-frontend=5c4542917ce8e9d85a127aac9088153ebb5a38c135e59f19b7ecf35eb0222b62a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22T7JWRliB6sYDC85iPHvgo3b4XfE2-nsS%22%3B%7D; advanced-frontend=15f51195a8a27a8a9bb1ab441306d11d',
+    'HTTP_HOST' => 'qashqadaryo-sanoat.uz',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_FORWARDED_HOST' => 'qashqadaryo-sanoat.uz',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'qashqadaryo-sanoat.uz',
+    'HTTP_X_REAL_IP' => '::ffff:84.54.122.163',
+    'HTTP_SEC_CH_UA' => '" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_X_HTTPS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'Yi3TU483sNpAEzJqrKaTnAAAAZQ',
+    'REDIRECT_SCRIPT_URL' => '/gii',
+    'REDIRECT_SCRIPT_URI' => 'https://qashqadaryo-sanoat.uz/gii',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Yi3TU483sNpAEzJqrKaTnAAAAZQ',
+    'SCRIPT_URL' => '/gii',
+    'SCRIPT_URI' => 'https://qashqadaryo-sanoat.uz/gii',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'qashqadaryo-sanoat.uz',
+    'SERVER_ADDR' => '116.202.82.235',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '84.54.122.163',
+    'DOCUMENT_ROOT' => '/home/qashqada/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/qashqada/public_html',
+    'SERVER_ADMIN' => 'webmaster@qashqadaryo-sanoat.uz',
+    'SCRIPT_FILENAME' => '/home/qashqada/public_html/frontend/web/index.php',
+    'REMOTE_PORT' => '24780',
+    'REDIRECT_URL' => '/gii',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/gii',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1647170387.859384059906005859375,
+    'REQUEST_TIME' => 1647170387,
+    'argv' => [],
+    'argc' => 0,
+]
+[13-Mar-2022 11:27:35 UTC] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Login Required in /home/qashqada/public_html/vendor/yiisoft/yii2/web/User.php:460
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(131): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/qashqada/public_html/vendor/yiisoft/yii2/web/Controller.php(221): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#9 /home/qashqada/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#10 /home/qashqada/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#12 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: Login Required in /home/qashqada/public_html/vendor/yiisoft/yii2/web/User.php:460
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(131): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/qashqada/public_html/vendor/yiisoft/yii2/web/Controller.php(221): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#9 /home/qashqada/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#10 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/qashqada/public_html/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_csrf-frontend=5c4542917ce8e9d85a127aac9088153ebb5a38c135e59f19b7ecf35eb0222b62a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22T7JWRliB6sYDC85iPHvgo3b4XfE2-nsS%22%3B%7D; advanced-frontend=15f51195a8a27a8a9bb1ab441306d11d; advanced-backend=90dc0ad52dd15380b39ac856a485752f; _identity-backend=33d020c60d0bbbc373d01be5aa0d7c8f29043620e07ddaf0d8e954081ac21e42a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wPRXYC2d0q-imvBd9k1bh-SaSgXJZeXJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=2669334f634276bdcf6a65da2bcad89e180b144a4b879e2bf1e1f21d40d6d351a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22q1dztacRIVz0DlFzrfmSQx5t8obpznKB%22%3B%7D',
+    'HTTP_HOST' => 'qashqadaryo-sanoat.uz',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_FORWARDED_HOST' => 'qashqadaryo-sanoat.uz',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'qashqadaryo-sanoat.uz',
+    'HTTP_X_REAL_IP' => '::ffff:84.54.122.163',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_CH_UA' => '" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_X_HTTPS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'Yi3VJ7W7D_CBAzlCxm6O4QAAAJU',
+    'REDIRECT_SCRIPT_URL' => '/site/login',
+    'REDIRECT_SCRIPT_URI' => 'https://qashqadaryo-sanoat.uz/site/login',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Yi3VJ7W7D_CBAzlCxm6O4QAAAJU',
+    'SCRIPT_URL' => '/site/login',
+    'SCRIPT_URI' => 'https://qashqadaryo-sanoat.uz/site/login',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'qashqadaryo-sanoat.uz',
+    'SERVER_ADDR' => '116.202.82.235',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '84.54.122.163',
+    'DOCUMENT_ROOT' => '/home/qashqada/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/qashqada/public_html',
+    'SERVER_ADMIN' => 'webmaster@qashqadaryo-sanoat.uz',
+    'SCRIPT_FILENAME' => '/home/qashqada/public_html/frontend/web/index.php',
+    'REMOTE_PORT' => '11038',
+    'REDIRECT_URL' => '/site/login',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/site/login',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1647170855.170835971832275390625,
+    'REQUEST_TIME' => 1647170855,
+    'argv' => [],
+    'argc' => 0,
+]
+[13-Mar-2022 13:02:24 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#4 {main}
+Previous exception:
+yii\web\ForbiddenHttpException: You are not allowed to access this page. in /home/qashqada/public_html/vendor/yiisoft/yii2-gii/src/Module.php:116
+Stack trace:
+#0 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Controller.php(166): yii\gii\Module->beforeAction(Object(yii\base\InlineAction))
+#1 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('index', Array)
+#2 /home/qashqada/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/ind...', Array)
+#3 /home/qashqada/public_html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home/qashqada/public_html/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_identity-backend=33d020c60d0bbbc373d01be5aa0d7c8f29043620e07ddaf0d8e954081ac21e42a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wPRXYC2d0q-imvBd9k1bh-SaSgXJZeXJ%22%2C2592000%5D%22%3B%7D; _csrf-frontend=5635d6861a30d3a905d9a1c33fda7043aab6e2bda1e821d9c74daf110438d7c3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22k_vP5LcFtZAiXT_AoK8whSGzNRcMY83O%22%3B%7D; advanced-frontend=73d7c24651f1050524fd50d491cc0e99',
+    'HTTP_HOST' => 'qashqadaryo-sanoat.uz',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_FORWARDED_HOST' => 'qashqadaryo-sanoat.uz',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'qashqadaryo-sanoat.uz',
+    'HTTP_X_REAL_IP' => '::ffff:84.54.122.163',
+    'HTTP_SEC_CH_UA' => '" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Linux"',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_X_HTTPS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'Yi3rYICj4OmvmW4yMBWgYQAAAFQ',
+    'REDIRECT_SCRIPT_URL' => '/gii',
+    'REDIRECT_SCRIPT_URI' => 'https://qashqadaryo-sanoat.uz/gii',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Yi3rYICj4OmvmW4yMBWgYQAAAFQ',
+    'SCRIPT_URL' => '/gii',
+    'SCRIPT_URI' => 'https://qashqadaryo-sanoat.uz/gii',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'qashqadaryo-sanoat.uz',
+    'SERVER_ADDR' => '116.202.82.235',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '84.54.122.163',
+    'DOCUMENT_ROOT' => '/home/qashqada/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/qashqada/public_html',
+    'SERVER_ADMIN' => 'webmaster@qashqadaryo-sanoat.uz',
+    'SCRIPT_FILENAME' => '/home/qashqada/public_html/frontend/web/index.php',
+    'REMOTE_PORT' => '21804',
+    'REDIRECT_URL' => '/gii',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/gii',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1647176544.49746799468994140625,
+    'REQUEST_TIME' => 1647176544,
+    'argv' => [],
+    'argc' => 0,
+]
+[21-Mar-2022 14:42:45 UTC] PHP Fatal error:  Cannot redeclare frontend\controllers\SiteController::actionCate() in /home/qashqada/public_html/frontend/controllers/SiteController.php on line 184
+[22-Mar-2022 13:31:17 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 262144 bytes) in /home/qashqada/public_html/vendor/yiisoft/yii2/base/Component.php on line 139
+[22-Mar-2022 13:32:59 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 262144 bytes) in /home/qashqada/public_html/vendor/yiisoft/yii2/base/Component.php on line 139
+[22-Mar-2022 13:36:49 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 262144 bytes) in /home/qashqada/public_html/vendor/yiisoft/yii2/base/Component.php on line 139
+[22-Mar-2022 14:42:44 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 4096 bytes) in /home/qashqada/public_html/frontend/controllers/SiteController.php on line 186
