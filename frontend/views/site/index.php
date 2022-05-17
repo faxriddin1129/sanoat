@@ -2,9 +2,16 @@
 
 /* @var $this yii\web\View */
 
+use common\models\User;
+use frontend\models\News;
+use frontend\models\Production;
+use yii\helpers\Url;
+
 $this->title = 'Trade in Industrial';
-$data = \frontend\models\News::find()->where(['status'=>1])->limit(3)->all();
+$data = News::find()->where(['status'=>1])->limit(3)->all();
+$dataP = Production::find()->orderBy(['id'=>SORT_DESC])->limit(4)->all();
 ?>
+
 <div class="container-fluid" style="padding: 0 !important; margin-top: 15px">
     <div class="row">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
@@ -15,8 +22,11 @@ $data = \frontend\models\News::find()->where(['status'=>1])->limit(3)->all();
                         <h2>QASHQADARYO VILOYATI SANOAT SEKTORLARI</h2>
                         <p>USHBU PLATFORMA ORQALI HUDUDLARDAGI SANOAT SEKTORLARI HAMDA ISHLASB CHIQARISH KORXONALARIDAGI XOM-ASHYO MAXSULOTLARINI TAN NARXI, SIFATI VA O'ZBEKISTON BOZORIDAGI O'RNI XAQIDA BILIB OLISHINGIUZ MUMKIN!</p>
                         <a href="<?=\yii\helpers\Url::to(['site/profil'])?>" class="text-white btn btn-primary text-uppercase p-2 c-a"><b>Tizimdan Foydalanish</b></a>
-                        <div class="buttons" style="background-color: #00000060; padding-top: 30px; padding-bottom: 25px">
-                            <a class="btn btn-outline-primary text-uppercase font-weight-bolder ml-0 mb-2 my text-white" style="border: 3px solid #0d6efd;" href="<?=\yii\helpers\Url::to(['site/category'])?>"><b>KATEGORIYALAR</b></a>
+                        <div class="buttons" style="background-color: #00000060; padding-top: 30px; padding-bottom: 50px">
+                            <form action="/site/cate?category_id=1" method="get">
+                                <input style="display: inline-block; padding: 6px; width: 50%; border-radius: 4px;" type="text" name="search" placeholder="Sayt bo`ylab qidiruv...">
+                                <input style="display: inline-block;" type="submit" value="Izlash" class="btn btn-primary">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -26,8 +36,11 @@ $data = \frontend\models\News::find()->where(['status'=>1])->limit(3)->all();
                         <h2>QASHQADARYO VILOYATI SANOAT SEKTORLARI</h2>
                         <p>USHBU PLATFORMA ORQALI HUDUDLARDAGI SANOAT SEKTORLARI HAMDA ISHLASB CHIQARISH KORXONALARIDAGI XOM-ASHYO MAXSULOTLARINI TAN NARXI, SIFATI VA O'ZBEKISTON BOZORIDAGI O'RNI XAQIDA BILIB OLISHINGIUZ MUMKIN!</p>
                         <a href="<?=\yii\helpers\Url::to(['site/profil'])?>" class="text-white btn btn-primary text-uppercase p-2 c-a"><b>Tizimdan Foydalanish</b></a>
-                        <div class="buttons" style="background-color: #00000060; padding-top: 30px; padding-bottom: 25px">
-                            <a class="btn btn-outline-primary text-uppercase font-weight-bolder ml-0 mb-2 my text-white" style="border: 3px solid #0d6efd;" href="<?=\yii\helpers\Url::to(['site/category'])?>"><b>KATEGORIYALAR</b></a>
+                        <div class="buttons" style="background-color: #00000060; padding-top: 30px; padding-bottom: 50px">
+                            <form action="/site/cate?category_id=1" method="get">
+                                <input style="display: inline-block; padding: 6px; width: 50%; border-radius: 4px;" type="text" name="search" placeholder="Sayt bo`ylab qidiruv...">
+                                <input style="display: inline-block;" type="submit" value="Izlash" class="btn btn-primary">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -37,8 +50,11 @@ $data = \frontend\models\News::find()->where(['status'=>1])->limit(3)->all();
                         <h2>QASHQADARYO VILOYATI SANOAT SEKTORLARI</h2>
                         <p>USHBU PLATFORMA ORQALI HUDUDLARDAGI SANOAT SEKTORLARI HAMDA ISHLASB CHIQARISH KORXONALARIDAGI XOM-ASHYO MAXSULOTLARINI TAN NARXI, SIFATI VA O'ZBEKISTON BOZORIDAGI O'RNI XAQIDA BILIB OLISHINGIUZ MUMKIN!</p>
                         <a href="<?=\yii\helpers\Url::to(['site/profil'])?>" class="text-white btn btn-primary text-uppercase p-2 c-a"><b>Tizimdan Foydalanish</b></a>
-                        <div class="buttons" style="background-color: #00000060; padding-top: 30px; padding-bottom: 25px">
-                            <a class="btn btn-outline-primary text-uppercase font-weight-bolder ml-0 mb-2 my text-white" style="border: 3px solid #0d6efd;" href="<?=\yii\helpers\Url::to(['site/category'])?>"><b>KATEGORIYALAR</b></a>
+                        <div class="buttons" style="background-color: #00000060; padding-top: 30px; padding-bottom: 50px">
+                            <form action="/site/cate?category_id=1" method="get">
+                                <input style="display: inline-block; padding: 6px; width: 50%; border-radius: 4px;" type="text" name="search" placeholder="Sayt bo`ylab qidiruv...">
+                                <input style="display: inline-block;" type="submit" value="Izlash" class="btn btn-primary">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -66,6 +82,22 @@ if(Yii::$app->session->hasFlash('success')): ?>
         </div>
     </div>
 <?php endif; ?>
+
+<div class="container mt-5">
+    <h3 class="text-uppercase text-center text-primary">Eng So'nggi E`LONLAR</h3>
+    <div class="row">
+        <?php foreach ($dataP as $item): ?>
+            <div class="col-md-3 col-12 p-4">
+                <img class="card-img-top img-fluid img-thumbnail h-50 mt-2" src="/img/<?=$item['img_1']?> " alt="">
+                <div class="card-body">
+                    <h4 class="text-dark"><?=$item['name']?></h4>
+                    <p><a href="<?=Url::to(['site/views','id'=>$item['id']])?>"><span class="text-secondary">Ishlab chiqaruvchi korxona</span> <b class="text-uppercase text-primary"><?=User::findOne($item['user_id'])->companyName?></b></a></p>
+                    <p>Bozordagi Narxi <b><?=$item['price']?>  UZS</b></p>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
 
 <div class="container">
     <div class="row">
@@ -108,6 +140,7 @@ if(Yii::$app->session->hasFlash('success')): ?>
         </div>
     </div>
 </div>
+
 
 <div class="container mt-5">
     <div class="row">
@@ -266,7 +299,6 @@ if(Yii::$app->session->hasFlash('success')): ?>
     .carousel-caption{
         position: absolute;
         width: 100%;
-        height: 100%;
         right: 0;
         bottom: 0;
         left: 0;

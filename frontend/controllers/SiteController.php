@@ -24,7 +24,7 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'views' ,'error','signup','index','hisobot','hududiy','contact','news','new','category','cate','cates'],
+                        'actions' => ['login', 'map', 'views' ,'error','signup','index','hisobot','hududiy','contact','news','new','category','cate','cates'],
                         'allow' => true,
                     ],
                     [
@@ -62,6 +62,12 @@ class SiteController extends Controller
     {
         $this->layout = 'navbar';
         return $this->render('index');
+    }
+
+    public function actionMap()
+    {
+        $this->layout = 'test';
+        return $this->render('test');
     }
 
     public function actionHududiy()
