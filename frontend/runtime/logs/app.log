@@ -18807,3 +18807,201 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1652422337.9323
     'REQUEST_TIME' => 1652422337
 ]
+2022-05-27 09:07:14 [127.0.0.1][-][et6ls8srs62i9vqujki05iuhjafie0q0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#1 D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#2 D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2022-05-27 09:07:14 [127.0.0.1][-][et6ls8srs62i9vqujki05iuhjafie0q0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'et6ls8srs62i9vqujki05iuhjafie0q0'
+    '_csrf-frontend' => '8e1f615559b609cc027e6c8f9966099d1f880df8cbc663ea74122641a3e9891ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"OuxJfHu4LEUVc7GnRfJG7Vklvj4PcJit\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sanoat.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sanoat.loc/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=et6ls8srs62i9vqujki05iuhjafie0q0; _csrf-frontend=8e1f615559b609cc027e6c8f9966099d1f880df8cbc663ea74122641a3e9891ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22OuxJfHu4LEUVc7GnRfJG7Vklvj4PcJit%22%3B%7D'
+    'PATH' => 'd:\\ocpanel\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\ocpanel\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\ocpanel\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\ocpanel\\openserver\\modules\\php\\PHP_7.4;d:\\ocpanel\\openserver\\modules\\wget\\bin;d:\\ocpanel\\openserver\\modules\\database\\MySQL-5.7\\bin;d:\\ocpanel\\openserver\\modules\\database\\PostgreSQL-9.2\\bin;d:\\ocpanel\\openserver\\modules\\database\\PostgreSQL-9.2\\lib;d:\\ocpanel\\openserver\\modules\\database\\MongoDB-4.2;d:\\ocpanel\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;d:\\ocpanel\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sanoat.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OCPANEL/OpenServer/domains/yii2/sanoat.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OCPANEL/OpenServer/domains/yii2/sanoat.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OCPANEL/OpenServer/domains/yii2/sanoat.loc/frontend/web/index.php'
+    'REMOTE_PORT' => '60700'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1653631634.6732
+    'REQUEST_TIME' => 1653631634
+]
+2022-06-07 16:31:36 [127.0.0.1][-][5cghi9umr4vdnaikn2ijq2tqldbs1pvg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#1 D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#2 D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 D:\OCPANEL\OpenServer\domains\yii2\sanoat.loc\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2022-06-07 16:31:36 [127.0.0.1][-][5cghi9umr4vdnaikn2ijq2tqldbs1pvg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '5cghi9umr4vdnaikn2ijq2tqldbs1pvg'
+    '_csrf-frontend' => '22a09c228720ff1543b25c6378d2b383faf9df3613860baccd93ebeb4435ee29a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-52nR9KUGB_IKapEJSYikeC5GQwjHUup\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sanoat.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sanoat.loc/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=5cghi9umr4vdnaikn2ijq2tqldbs1pvg; _csrf-frontend=22a09c228720ff1543b25c6378d2b383faf9df3613860baccd93ebeb4435ee29a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-52nR9KUGB_IKapEJSYikeC5GQwjHUup%22%3B%7D'
+    'PATH' => 'd:\\ocpanel\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\ocpanel\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\ocpanel\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\ocpanel\\openserver\\modules\\php\\PHP_7.4;d:\\ocpanel\\openserver\\modules\\wget\\bin;d:\\ocpanel\\openserver\\modules\\database\\MySQL-5.7\\bin;d:\\ocpanel\\openserver\\modules\\database\\PostgreSQL-9.5\\bin;d:\\ocpanel\\openserver\\modules\\database\\PostgreSQL-9.5\\lib;d:\\ocpanel\\openserver\\modules\\database\\MongoDB-4.2;d:\\ocpanel\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;d:\\ocpanel\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sanoat.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OCPANEL/OpenServer/domains/yii2/sanoat.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OCPANEL/OpenServer/domains/yii2/sanoat.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OCPANEL/OpenServer/domains/yii2/sanoat.loc/frontend/web/index.php'
+    'REMOTE_PORT' => '56562'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1654608695.9303
+    'REQUEST_TIME' => 1654608695
+]
+2022-06-21 09:34:14 [127.0.0.1][-][fleql7oh4bk10hosaa77g0aatf7m6mcm][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in D:\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#1 D:\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#2 D:\OpenServer\domains\yii2\sanoat.loc\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OpenServer\domains\yii2\sanoat.loc\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 D:\OpenServer\domains\yii2\sanoat.loc\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2022-06-21 09:34:14 [127.0.0.1][-][fleql7oh4bk10hosaa77g0aatf7m6mcm][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'fleql7oh4bk10hosaa77g0aatf7m6mcm'
+    '_csrf-frontend' => '1d487c2fc32c881e11f5381df3ed83ccf5d68d4c38c0ab8f0229a1c24c1569cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"L99Yv3BwCizlaDL9xeVH1n-1VSFN9RZs\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sanoat.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sanoat.loc/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=fleql7oh4bk10hosaa77g0aatf7m6mcm; _csrf-frontend=1d487c2fc32c881e11f5381df3ed83ccf5d68d4c38c0ab8f0229a1c24c1569cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22L99Yv3BwCizlaDL9xeVH1n-1VSFN9RZs%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.7\\bin;d:\\openserver\\modules\\database\\PostgreSQL-9.5\\bin;d:\\openserver\\modules\\database\\PostgreSQL-9.5\\lib;d:\\openserver\\modules\\database\\MongoDB-4.2;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sanoat.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/yii2/sanoat.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/yii2/sanoat.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/yii2/sanoat.loc/frontend/web/index.php'
+    'REMOTE_PORT' => '55178'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1655793254.0757
+    'REQUEST_TIME' => 1655793254
+]
